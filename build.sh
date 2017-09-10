@@ -1,9 +1,5 @@
 #!/bin/bash
 
-### Prema Chand Alugu (premaca@gmail.com)
-### Shivam Desai (shivamdesaixda@gmail.com)
-### A custom build script to build zImage & DTB(Anykernel2 method)
-
 set -e
 
 ## Copy this script inside the kernel directory
@@ -14,6 +10,8 @@ DTBTOOL=$KERNEL_DIR/Dtbtool/
 JOBS=4
 ANY_KERNEL2_DIR=$KERNEL_DIR/AnyKernel2/
 FINAL_KERNEL_ZIP=Alize-8.x_vOneHundredOne.zip
+# Speed up build process
+MAKE="./makeparallel"
 
 BUILD_START=$(date +"%s")
 blue='\033[0;34m'
