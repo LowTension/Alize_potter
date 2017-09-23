@@ -5,6 +5,9 @@ before_script:
   - apt-get install --yes build-essential gcc-multilib bc kernel-package libncurses5-dev bzip2
   - chmod +x build.sh
   - mkdir Builds
+  - cd Builds
+  - mkdir Oreo
+  - cd ..
 
 stages:
   - build
