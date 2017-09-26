@@ -15,7 +15,7 @@ sudo apt-get install --yes build-essential gcc-multilib bc
 Now clone the repo:
 
 ```
-git clone https://gitlab.com/alize_kernel/Potter.git
+git clone https://github.com/Alize_potter/Potter.git
 ```
 
 Then you will be able to build after giving permissions to build.sh
